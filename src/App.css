@@ -1,0 +1,1061 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainTransition: all 0.3s linear;
+}
+.body{
+    position: relative;
+}
+
+/*******/
+/*Nav bar  Begins*/
+/*******/
+
+.topNavBar{
+height: 2rem;
+}
+
+.top-icons{
+    position: absolute;
+   top: .5rem;
+    left: 80rem;
+}
+.top-icons a{
+    margin-left: 1rem;
+    display: inline-block;
+    color: white;
+}
+
+.logo{
+    position: absolute;
+    top: 3.5rem;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: all .3s ease ;
+  
+}
+.navBarlower{
+    position: absolute;
+   
+    top: 2.6rem;
+    left: 25%;
+    width: 41%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+.navBarlower ul{
+   display: flex;
+
+    margin: 3rem auto auto 2rem;
+    padding-top: 1.2rem;
+   height: 5rem;
+    background: rgb(27, 240, 240);
+    justify-content: center;
+
+    
+}
+.navBarlower ul li {
+    margin-top: .5rem;
+    display: inline-block;
+ 
+    text-align: center;
+   
+    
+
+}
+.navBarlower ul a{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    margin: 1rem;
+    padding:0.5rem 1rem;
+    background: rgb(241, 29, 160);
+    background-position: 1px;
+     color: white;
+   border-top-right-radius: .5rem;
+   border-bottom-left-radius: .5rem;
+
+   outline: none;
+   text-decoration: none;
+}
+
+
+.nav_back{
+    margin-top: -5rem;
+    height: 15rem;
+    background:rgba(243, 198, 198, 0.42)
+
+
+}
+.navBarlower ul a:hover{
+    background: rgb(43, 41, 42);
+    outline-style: none;
+   transition: all .5s linear 0.001s;
+}
+ 
+
+.search{
+    margin: 5rem auto auto -2rem;
+}
+.show-search{
+    height: 2rem;
+}
+.hide-search{
+    height: 0;
+}
+
+.menu-icon{
+    position: absolute;
+    top: 14%;
+    font-size: 2.3rem;
+    left: 88%;
+    display: none;
+}
+.menu-icon:hover{
+    color:rgba(224, 15, 120, 0.993) ;
+    transition: all .5s linear 0.001s;
+}
+.search{
+    position: absolute;
+
+    top: 2.3rem;
+    left: 76%;
+  
+}
+
+
+@media screen and (max-width:1100px){
+    .navBarlower{
+        position: absolute;
+     
+    }
+
+    .navBarlower ul{
+        position: absolute;
+        flex-direction: row;
+        justify-content: space-between;
+        display: hide;
+       
+        top: -15%;
+        background: transparent;
+      
+        left:110%;
+      
+     --mainTransition: all 0.3s linear;
+    }
+  
+    .menu-icon{
+        display: block;
+        left: 68%;
+    }
+
+
+    .showMenu{
+        display: flex;
+    }
+
+    .hideMenu{
+        display: none;
+    }
+    .search{
+ 
+ 
+        top: -10%;
+        left:40%;
+      
+    }
+    
+
+  
+}
+
+/*******/
+/*Nav bar  Ends*/
+/*******/
+
+
+
+
+
+
+
+/*******/
+/*Home Begins*/
+/*******/
+.home-container{
+    position: absolute;
+    width: 100%;
+    margin-top: -1.5rem;
+}
+
+
+.homeSlide{
+position: relative;
+    width: 100%;
+ 
+}
+
+
+
+
+.slides img{
+
+  
+    width: 100%;
+    height: 50rem;
+  
+      
+  }
+  .previous{
+      background: yellow;
+  }
+  .slides .slick-prev,
+  .slides .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+  
+  
+  .slides {
+    position: unset;
+    width: 100%;
+    
+  
+   
+  
+  
+  }
+  
+  .slides .slick-prev,
+  .slides .slick-next {
+    position: absolute;
+    top: 50%;
+    
+  }
+  
+  .slides .slick-prev {
+    left: 20%;
+  }
+  
+  .slides .slick-next {
+    right: 5%;
+  }
+  .inside-slider{
+      position: relative;
+     
+  
+     
+     
+  }
+  
+  .inside-slider h1{
+      position: absolute;
+      color: white;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      left: 45%;
+      top: 10rem;
+      font-weight: 700;
+      font-family: 'Galada', cursive;
+  
+    
+  
+    
+  }
+  .inside-slider h2{
+      position: absolute;
+      color: white;
+      text-transform: capitalize;
+      left: 49%;
+      top: 15rem;
+      letter-spacing: 2px;
+      font-weight: 500;
+  
+    
+  
+    
+  }
+  .inside-slider button{
+      position: absolute;
+      color: white;
+      left: 49%;
+      top: 20rem;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      border: none;
+      background: #111111;
+  }
+  
+  .inside-slider a{
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  .inside-slider a:hover{
+  
+      text-decoration: none;
+  
+  }
+  .inside-slider button:hover {
+     background: rgb(233, 65, 65);
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+.homeContent{
+    position: absolute;
+    margin-top: 55rem;
+    left: 2%;
+    width: 100%;
+
+}
+  
+
+
+
+
+
+
+/*******/
+/*Home  End*/
+/*******/
+
+
+
+
+
+
+
+
+/*******/
+/*About Begins*/
+/*******/
+.aboutRight{
+    position: absolute;
+    top: 1rem;
+    width: 33rem;
+}
+.aboutRight h4{
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.aboutRight h2{
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 2rem auto;
+}
+.aboutRight p{
+    display: flex;
+    position: relative;
+    width: 95%;
+    margin-left: 0rem;
+}
+.aboutRightFirstPg{
+    color: #ed2d46;
+    font-size: 19px;
+
+    
+
+    letter-spacing: 0.5px;
+    margin: 2rem auto;
+}
+.aboutRightSecondtPg{
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+
+    
+
+    letter-spacing: 0.5px;
+    margin: 2rem auto;
+}
+
+.aboutLeft{
+    position: relative;
+    width: 20rem;
+    height: 20REM;
+    
+   
+
+}
+
+
+
+.aboutProducts{
+position: relative;
+display: flex;
+justify-content: center;
+width: 100%;
+height: 35rem;
+padding: 1rem;
+overflow: hidden;
+border: none;
+
+}
+
+
+@media screen and (max-width:600px){
+    .aboutProducts{
+        margin: 9rem auto auto 4rem;
+    }
+}
+
+
+
+.aboutProducts section{
+    width: 100%;
+    height: 100%;
+    background: rgb(242, 239, 253);
+    overflow: hidden;
+    
+}
+.aboutProducts section:hover{
+  border-top: 5px solid red;
+  transform: scale(1.1);
+  transition: all .5s ease;
+
+}
+
+.hovering:hover{
+    position: absolute;
+   transform: scale(1.1);
+  transition: all .3s linear ;
+}
+.aboutProducts section img{
+width:100%;
+height: 60%;
+}
+
+.slick-arrow .slick-prev {
+    font-size: 2rem;
+    color: brown;
+}
+
+.aboutTestmonyHeadings{
+    position: relative;
+    text-align: center;
+    top: 2rem;
+    border: none;
+ 
+}
+
+
+.aboutTestmonial{
+    margin-top: 2rem;
+    display: flex;
+    padding:2rem 1rem;
+    height: 20rem;    /* justify-content: space-around;
+    grid-template-columns: repeat(auto-fit,minmax(255px,1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 50px; */
+  
+}
+.aboutTestmonial section{
+    background: transparent;
+    margin-top: 1.5rem;
+    justify-items: right;
+    text-align: right;
+    width: 100%;
+    min-width: 50%;
+    height: 80%;
+    background: rgb(242, 239, 253);
+    overflow: hidden;
+    border: none;
+
+}
+.aboutTestmonial section img{
+    background: transparent;
+    margin:1% auto auto 82%;
+    border-radius: 50%;
+    width:15%;
+    height: 37%;
+
+}
+.aboutTestmonial section h5{
+    background: transparent;
+    position: relative;
+    top: -15%;
+    left: -6rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    
+}
+.aboutTestmonial section h6{
+    background: transparent;
+    position: relative;
+    top: -15%;
+    left: -6rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    
+}
+
+.testmonialContent{
+    position: relative;
+    background: rgba(243, 198, 198, 0.42);
+    width: 100%;
+    margin: -1.8rem auto auto auto;
+    padding: 1rem;
+    border: none;
+
+}
+
+
+
+
+
+/*******/
+/*About ends*/
+
+
+/*******/
+/*******/
+/*footer Begins*/
+/*******/
+.footer{
+    margin-top: 5rem;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer ul li{
+    display: inline;
+    padding: 0 1rem;
+    
+}
+ .footer li a{
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #111111;
+     font-weight: 500;
+ }
+ .footer li a:hover{
+     color: rgb(241, 29, 160);
+     font-weight: 700;
+     transform: scale(1.1);
+     transition: all .1s linear ;
+    
+ }
+
+/*******/
+/*footer ends*/
+/*******/
+.gallery-container{
+    background: rgb(199, 198, 198);
+}
+
+
+.featured-products{
+    width: 100%;
+}
+.featuredSection{
+    margin-top: 1rem;
+    height: 35rem;
+    padding: 1rem;
+    display: grid;
+   
+  
+}
+
+  .featuredSection:before{
+    position: absolute;
+    display: inherit;
+    content: '';
+    width: 0;
+    height: 0;
+    bottom: -2rem;
+    top: 0;
+    left: 2rem;
+    box-sizing: border-box;
+    border: 8px solid transparent;
+}
+ .featuredSection:hover:before{
+    width: 20.4rem;
+    content: '';
+    display: inherit;
+    top: 1rem;
+    border: 3px solid rgba(255, 0, 140, 0.822);
+    border-left: none;
+    border-bottom: none;
+   
+    transition: width 0.3s linear,height 0.3s linear 0.3s;
+
+}   
+   /* .featuredSection::after{
+    position: absolute;
+    content: '';
+    display: inherit;
+    width: 0rem;
+    height: 0;
+    left: 0;
+    bottom: 0rem;
+    box-sizing: initial;
+    border: 8px solid orange;
+} 
+.featuredSection:hover:after{
+    content: '';
+    width: 21.8rem;
+    height: 35rem;
+    top: 1rem;
+    border: 3px solid rgba(255, 0, 140, 0.822);
+    border-right: none;
+    border-top : none;
+    transition: width 0.3s linear,height 0.3s linear 0.3s;
+
+}     */
+.featuredSection img{
+    width: 100%;
+    height: 17rem;
+}
+
+.featuredSection h4{
+    text-transform: capitalize;
+    margin-top: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.featuredSection span{
+    text-transform: capitalize;
+    ;
+    color: #333;
+   
+    margin-top: -0.8rem;
+}
+
+.featuredSection p{
+    margin-top: 1rem;
+    color: #333;
+}
+.featuredSharingSection{
+    position: absolute;
+    text-align: center;
+    justify-items: center;
+       top: 2rem;
+    width: 84%;
+    padding-top: 3rem;
+    opacity: 0;
+    
+}
+
+.featuredSharingSection:hover{
+    background: rgba(255, 0, 0, 0.205);
+    display: block;
+    height: 17rem;
+    opacity: 1;
+    transition: all .3s linear ;
+    
+}
+
+.featuredSharingSection h6{
+    text-transform: capitalize;
+    color:rgb(250, 3, 3);
+    font-weight: 700;
+
+    
+}
+.featuredSharingSection ul li{
+    display: inline-block;
+    margin: auto 0.625rem;
+    font-size: 1rem;
+
+  
+}
+.featuredSharingSection ul li a{
+    font-size: 1.2rem;
+
+  
+}
+.featuredSharingSection ul li a:hover{
+color: black;
+transform: scale(1.5);
+transition: all .1s linear ;
+
+  
+}
+.featuredSharingSection button{
+    margin: 3rem auto auto 6rem;
+    
+}
+.featuredSharingSection button a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+/*******/
+/*Gallary Begins*/
+/*******/
+
+
+
+/*******/
+/*Gallery ends*/
+/*******/
+/*******/
+
+
+/*pagination Begins*/
+/*******/
+.pagination{
+    margin: 4rem auto;
+   
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.pagination li{
+    margin: 0.3rem;
+    display: inline-block;
+}
+
+.pagination li a:hover{
+    background: hotpink;
+}
+
+
+/*******/
+/*pagination ends*/
+
+
+
+/*******/
+/*SingleProductDetails Begins*/
+/*******/
+
+.SingleProductDetails{
+     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    justify-content: center;
+    justify-items: center;
+    height: 70rem;
+    padding-top: 3rem;
+    }
+
+.SingleProductDetails img{
+    width: 50%;
+    height: 45rem;
+    margin-left: 25%;
+
+}
+
+.SingleProductContent{
+    color: white;
+    
+
+    width: 50%;
+    margin-left: 25%;
+    padding: 2rem;
+}
+.SingleProductContent h3{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+}
+.SingleProductContent h6{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-style: italic;
+}
+.SingleProductContent span{
+    font-weight: 600;
+    margin-top: 1rem;
+    font-style: italic;
+}
+.SingleProductContent p{
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+
+/*******/
+/*SingleProductDetails ends*/
+/*******/
+
+
+/*******/
+/*Blog Begins*/
+/*******/
+
+.myblogpost-conatiner{
+    background:rgb(199, 198, 198);
+
+}
+.myBlogPostRight{
+    width: 100%;
+    height: 40rem;
+    background: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.myBlogPostRight img{
+    width: 100%;
+    height: 50%;
+    margin-top: -4rem;
+}
+.myBlogPostRight h3{
+    position: relative;
+    top: -10%;
+    left: 30% ;
+}
+
+.myBlogPostRight p{
+    margin: 1rem auto 2rem auto ;
+}
+
+.myBlogPostRight button{
+    margin: 1rem auto 1rem 0px ;
+
+}
+
+.author{
+    position: relative;
+    top: -4.5rem;
+    left: 30% ;
+}
+
+.myBlogPostLeft{
+    width: 100%;
+    height: 70rem;
+    background:transparent;
+    padding: 1rem;
+  
+}
+.myBlogPostLeft a{
+    text-decoration:  none;
+    color: black;
+}
+.myBlogPostLeft a:hover{
+    text-decoration:  none;
+    color:rgb(224, 35, 136);
+
+}
+
+.myBlogPostLeft img{
+ 
+    width: 100%;
+    height: 17rem;
+    
+
+}
+.myBlogPostLeftImage{
+    width: 20%;
+}
+
+.showRecent{
+    background:white;
+  
+}
+.hideRecent{
+      background:rgb(199, 198, 198);
+}
+.myBlogPostLeft button{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:0rem auto auto 0rem ;
+    text-align: center;
+    width: 50%;
+    padding: 0.5rem;
+    border: none;
+}
+.myBlogPostLeft button:focus{
+    border: none;
+    outline: none;
+}
+
+.sideComponentCategory{
+    padding: 1rem;
+}
+.sideComponentCategory h4{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.sideComponentCategory a{
+    font-size: 1rem;
+    text-transform: capitalize;
+   
+}
+.sideComponentCategory a:hover{
+    font-size: 1.1rem;
+    transition: t 0.5s ease-in-out;
+
+   
+}
+
+
+/*******/
+/*Blog ends*/
+/*******/
+
+
+
+
+
+/*******/
+/*PageTitle Begins*/
+/*******/
+.titleone-details{
+    color: black;
+    text-transform: capitalize;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6rem;
+  }
+  .titleone-details h1{
+  color: rgb(247, 12, 122);
+  font-weight: 700;
+  }
+  .titleone-details ul{
+    list-style: none;
+    margin-left: -0.625rem;
+    
+  }
+  .titleone-details ul li{
+    display: inline-block;
+    margin: 0.625rem;
+  }
+  .titleone-details ul li:nth-child(1)::after{
+    padding-left: 0.625rem;
+    color: red;
+    content: "/";
+  }
+  .titleone-details ul li:nth-child(2){
+    margin-left: 0rem;
+  
+  }
+  .titleone-details ul a{
+   color: rgb(247, 12, 122);;
+   font-weight: 600;
+  }
+  
+  .titleone-details ul a:hover{
+    color: rgb(8, 8, 8);
+    transition: var(--mainTransition);
+  
+  }
+
+
+
+/*******/
+/*PageTitle ends*/
+/*******/
+
+/*******/
+/*.TitleThree Begins*/
+/*******/
+.TitleThreeHeader{
+    text-align:  center;
+    text-transform: capitalize;
+    margin: 3rem auto;
+    
+    
+  }
+  
+
+
+
+/*******/
+/*.TitleThree ends*/
+/*******/
+
+
+/*******/
+/*pagination Begins*/
+/*******/
+.contact-form{
+    margin: 3rem auto;
+  }
+  .contact-form textarea{
+    height: 10rem;
+    border: 1px solid #f0e9ff;
+  }
+  .contact-form input{
+    margin: 1.5rem 1rem;
+    height: 3rem;
+    border: 1px solid #f0e9ff;
+   
+  }
+  
+  
+  .mycontainer h4{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .mycontainer ul{
+    list-style: none;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+  
+    
+  }
+  .mycontainer li{
+    margin: 1rem auto;
+  
+  }
+  
+  .mycontainer li a{
+    text-decoration:  none;
+    margin: 2rem auto;
+    
+  }
+  .mycontainer li a:hover{
+    color: black;
+    transition: var(--mainTransition);
+  }
+  
+
+
+/*******/
+/*pagination ends*/
+/*******/
+/*******/
+/*pagination Begins*/
+/*******/
+
+
+
+/*******/
+/*pagination ends*/
+/*******/
+/*******/
+/*pagination Begins*/
+/*******/
+
+
+
+/*******/
+/*pagination ends*/
+/*******/
+/*******/
+/*pagination Begins*/
+/*******/
+
+
+
+/*******/
+/*pagination ends*/
+/*******/
+
+
+  

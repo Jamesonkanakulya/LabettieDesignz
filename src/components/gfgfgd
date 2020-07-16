@@ -1,0 +1,130 @@
+      
+   
+   {post.map(newpost=>{
+                return <div key={newpost.id}>
+                    <h4>{newpost.title}</h4>
+
+                </div>
+            })
+
+
+
+
+            }
+                useEffect(()=>{
+        
+
+        const mypost = jamespost.find(item=> item.blogpost==blogpost);
+        setpost(mypost)
+        console.log(post);
+        
+   
+        
+        
+        
+
+
+        
+    },[blogpost,post])
+
+
+
+
+    import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { LabettieContext } from './Context'
+
+
+
+
+class James extends Component {
+
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             blogpost:props.match.params.blogpost,
+             post:[]
+        }
+    }
+    
+    static contextType = LabettieContext
+
+    render() {
+        
+        return (
+            <div className="james-container" >
+                cddgfgg
+                
+            </div>
+        )
+    }
+}
+
+export default James
+
+
+
+
+/*function Jim(props) {
+    const blogpost = props.match.params.blogpost
+    const [post,setpost] = useState({})
+    const jamespost = useContext(LabettieContext)
+   
+
+    useEffect((blogpost)=>{
+
+        if (!jamespost || !post) {
+            return <div>
+                <h4>no such post was found</h4>
+            </div>
+        }
+
+    },[jamespost,post])
+
+
+
+    
+    
+    
+    return (
+        <div className= "james-container">
+
+            hello from 
+      
+         
+           
+            
+      
+        </div>
+    )
+}
+
+
+
+
+    {
+            newpost.map((item,i)=>{
+                return <div key= {i}>
+                    {item.title}
+                </div>
+            })
+        }
+
+
+
+
+export default Jim
+
+Jim.propTypes= {
+    item:PropTypes.object
+}*/
+
+ if(!jamespost){
+          return <div>
+              <p>no such page</p>
+              <Link to= "/">
+                  Home
+              </Link>
+          </div>
+      }
